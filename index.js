@@ -13,7 +13,7 @@ const createNewDonut = new DonutMaker(0, 0, 100, 10, 0);
 
 buttonClick.addEventListener("click", () => {
   createNewDonut.addDonut();
-  numberOfDonuts.innerHTML = createNewDonut.numDonuts;
+  numberOfDonuts.innerHTML = createNewDonut.numDonuts.toFixed(2);
   console.log(createNewDonut.numDonuts);
 });
 
@@ -21,18 +21,18 @@ autoClicker.addEventListener("click", () => {
   createNewDonut.addAutoClicker();
   numberOfAutoClickers.innerHTML = createNewDonut.numAutoClickers;
   autoClickerCost.innerHTML = createNewDonut.costOfAutoClicker;
-  numberOfDonuts.innerHTML = createNewDonut.numDonuts;
+  numberOfDonuts.innerHTML = createNewDonut.numDonuts.toFixed(2);
   console.log(createNewDonut.numAutoClickers);
 });
 
 setInterval(function () {
   createNewDonut.activateAutoClicker();
-  numberOfDonuts.innerHTML = createNewDonut.numDonuts;
+  numberOfDonuts.innerHTML = createNewDonut.numDonuts.toFixed(2);
 }, 1000);
 
 multiplier.addEventListener("click", () => {
   createNewDonut.addMultiplier();
   numMultipliers.innerHTML = createNewDonut.numMultipliers;
   costOfMultiplier.innerHTML = createNewDonut.costOfMultiplier;
-  numberOfDonuts.innerHTML = createNewDonut.numDonuts;
+  numberOfDonuts.innerHTML = createNewDonut.numDonuts.toFixed(2);
 });

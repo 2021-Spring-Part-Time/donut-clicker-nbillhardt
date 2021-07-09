@@ -1,0 +1,37 @@
+body {
+  background-image: url(donuts.jpg);
+  background-size: cover;
+  text-align: left;
+}
+
+.button{
+    justify-content: center;
+}
+
+#donutMakerFunctionality{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 1em;
+  margin-top: 300px;
+  padding: 1em 1em 1em;
+}
+
+#donuts {
+  background-color: honeydew;
+  margin-left: 10px;
+  padding: 1em;
+  width: 350px;
+}
+
+#autoClickers {
+  background-color: honeydew;
+  padding: 1em;
+  width: 350px;
+}
+
+#multipliers {
+  background-color: honeydew;
+  padding: 1em;
+  width: 350px;
+}

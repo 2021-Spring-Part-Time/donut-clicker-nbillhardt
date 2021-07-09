@@ -13,12 +13,12 @@ export default class DonutMaker  {
     this.numMultipliers = numMultipliers;
   }
   addDonut() {
-    this.numDonuts+= Math.pow(1.2, this.numMultipliers);
+    this.numDonuts += Math.pow(1.2, this.numMultipliers);
   }
   addAutoClicker() {
-    if (this.numDonuts >= 2) {
+    if (this.numDonuts >= 100) {
       this.numAutoClickers++;
-      this.numDonuts -= 2;
+      this.numDonuts -= 100;
       this.costOfAutoClicker = Math.round(this.costOfAutoClicker * 1.1);
     }
   }
