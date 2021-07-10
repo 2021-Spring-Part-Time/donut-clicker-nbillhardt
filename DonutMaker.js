@@ -1,4 +1,4 @@
-export default class DonutMaker  {
+export default class DonutMaker {
   constructor(
     numDonuts,
     numAutoClickers,
@@ -12,9 +12,11 @@ export default class DonutMaker  {
     this.costOfMultiplier = costOfMultiplier;
     this.numMultipliers = numMultipliers;
   }
+
   addDonut() {
     this.numDonuts += Math.pow(1.2, this.numMultipliers);
   }
+
   addAutoClicker() {
     if (this.numDonuts >= 100) {
       this.numAutoClickers++;
@@ -22,11 +24,13 @@ export default class DonutMaker  {
       this.costOfAutoClicker = Math.round(this.costOfAutoClicker * 1.1);
     }
   }
+
   activateAutoClicker() {
-      for (let i = 0; i<this.numAutoClickers;i++  ){
-          this.addDonut();
-      }
+    for (let i = 0; i < this.numAutoClickers; i++) {
+      this.addDonut();
+    }
   }
+
   addMultiplier() {
     if (this.numDonuts >= 10) {
       this.numMultipliers++;
@@ -35,4 +39,3 @@ export default class DonutMaker  {
     }
   }
 }
-
