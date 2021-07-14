@@ -4,10 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Donut Clicker</title>
   </head>
   <body>
-    <div class="container"></div>
+    <header>
+      <h1>Fred the Baker Baking Company</h1>
+      <nav>
+        <a href="./about.html" target="_blank">About Fred & Co.</a>
+
+        <a href="https://orteil.dashnet.org/cookieclicker/" target="_blank"
+          >Cookie Clicker</a
+        >
+        <a id="myContact" href="#contact">Contact Developer</a>
+        <div id="myModal" class="contact__modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Nick Billhardt</h2>
+            <h3>Software Developer</h3>
+            <p>Contact Info</p>
+            <p>Email: nickbillhardt@ymail.com</p>
+            <p>Ph: (440) 527 - 3461</p>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div id="donutMakerFunctionality">
+      <article id="donuts">
+        <p>Number of Donuts: <span id="numberOfDonuts">0</span></p>
+        <p>Donuts Per Click: <span id="donutsPerClick">1</span></p>
+        <button id="createDonut">Make a Donut</button>
+      </article>
+      <article id="autoClickers">
+        <p>Number of Auto Clickers: <span id="numberOfAutoClickers">0</span></p>
+        <p>
+          Cost of Each Auto Clicker: <span id="costOfAutoClicker">100</span>
+        </p>
+        <button id="autoClicker">Purchase Auto Clicker</button>
+      </article>
+      <article id="multipliers">
+        <p>Number of Multipliers: <span id="numberOfMultipliers">0</span></p>
+        <p>Cost of Each Multiplier: <span id="costOfMultiplier">10</span></p>
+        <button id="multiplier">Purchase Multiplier</button>
+      </article>
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>
